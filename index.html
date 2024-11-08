@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日导航 - 您的网络起始页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-center text-gray-800 mb-4">今日导航</h1>
+        <p id="today" class="text-xl text-center text-gray-600 mb-8"></p>
+
+        <div class="grid gap-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">热门网站</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                    <a href="https://www.baidu.com" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">百度</a>
+                    <a href="https://www.sina.com.cn" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">新浪</a>
+                    <a href="https://www.qq.com" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">腾讯</a>
+                    <a href="https://www.163.com" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">网易</a>
+                    <a href="https://www.taobao.com" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">淘宝</a>
+                    <a href="https://www.jd.com" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">京东</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">新闻资讯</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                    <a href="http://news.sina.com.cn" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">新浪新闻</a>
+                    <a href="https://news.qq.com" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">腾讯新闻</a>
+                    <a href="http://news.163.com" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">网易新闻</a>
+                    <a href="https://www.thepaper.cn" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">澎湃新闻</a>
+                    <a href="https://www.huanqiu.com" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">环球网</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">视频娱乐</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                    <a href="https://www.youku.com" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">优酷</a>
+                    <a href="https://www.iqiyi.com" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">爱奇艺</a>
+                    <a href="https://v.qq.com" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">腾讯视频</a>
+                    <a href="https://www.bilibili.com" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">哔哩哔哩</a>
+                    <a href="https://www.douyin.com" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">抖音</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">生活服务</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                    <a href="https://www.ctrip.com" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">携程</a>
+                    <a href="https://www.meituan.com" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">美团</a>
+                    <a href="https://www.dianping.com" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">大众点评</a>
+                    <a href="https://www.12306.cn" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">12306</a>
+                    <a href="https://www.gaode.com" class="bg-gray-50 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow text-center transition duration-300">高德地图</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 获取并显示今天的日期
+        const today = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+        document.getElementById('today').textContent = today.toLocaleDateString('zh-CN', options);
+    </script>
+</body>
+</html>
